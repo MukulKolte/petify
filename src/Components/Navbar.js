@@ -4,6 +4,27 @@ import { useNavigate } from 'react-router-dom';
 function Navbar() {
 
     const navigate = useNavigate();
+    
+
+    function handleClick(choice){
+        if(choice=== '/'){
+            document.getElementById('categories').classList.remove('active');
+            document.getElementById('home').classList.add('active');
+            // document.getElementById('home').removeAttribute('class');
+            // document.getElementById('home').classList.add('afterClickClassHome');
+            // document.getElementById('categories').removeAttribute('class');
+            // document.getElementById('categories').classList.add('categories-text');
+        }
+        else if(choice==='/categories'){
+            document.getElementById('categories').classList.add('active');
+            document.getElementById('home').classList.remove('active');
+            // document.getElementById('home').removeAttribute('class');
+            // document.getElementById('home').classList.add('home-text');
+            // document.getElementById('categories').removeAttribute('class');
+            // document.getElementById('categories').classList.add('afterClickClassCategory');
+        }
+        navigate(choice);
+    }
 
     return (
         <div className='navbar'>
@@ -19,12 +40,12 @@ function Navbar() {
             </div>
 
             <div className='links'>
-                <button className='home-text' onClick={() => navigate('/', { replace: true })}>Home</button>
-                <button className='categories-text' onClick={() => navigate('/categories', { replace: true })}>Categories</button>
-                <button className='about-text' href='#'>About Us</button>
-                <button className='products-text' href='#'>Products</button>
-                <button className='petcare-text' href='#'>Pet Care</button>
-                <button className='contact-text' href='#'>Contact</button>
+                <button id='home' className='home-text' onClick={() => handleClick('/')}>Home</button>
+                <button id='categories' className='categories-text' onClick={() => handleClick('/categories')}>Categories</button>
+                <button id='aboutus' className='about-text'>About Us</button>
+                <button id='products' className='products-text' >Products</button>
+                <button id='petcare' className='petcare-text'>Pet Care</button>
+                <button id='contact' className='contact-text'>Contact</button>
             </div>
 
             <div className='buttons'>

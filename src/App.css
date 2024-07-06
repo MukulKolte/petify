@@ -3,6 +3,7 @@ body {
   width: 1440px;
   height: 900px;
   margin-left: 12.5%;
+  /* margin-left: calc(); */
   background: #FFFFFF;
 }
 
@@ -211,6 +212,15 @@ body {
   flex-grow: 0;
 }
 
+.active {
+  font-weight: 600;
+  font-size: 20px;
+  background-color: transparent;
+  border-color: transparent;
+
+  color: #FFAA00;
+}
+
 .home-text:hover,
 .categories-text:hover,
 .about-text:hover,
@@ -224,7 +234,6 @@ body {
   cursor: grabbing;
 
   color: #FFAA00;
-
 }
 
 .buttons {
@@ -830,7 +839,36 @@ body {
   border-radius: 50%;
   background: #1E89AF;
   transform: rotate(-26.56deg);
-
+}
+.image-background2 {
+  position: absolute;
+  width: 508.74px;
+  height: 508.74px;
+  left: 100px;
+  top: 100px;
+  border-radius: 50%;
+  background:#FF7A00;
+  transform: rotate(-26.56deg);
+}
+.image-background3 {
+  position: absolute;
+  width: 508.74px;
+  height: 508.74px;
+  left: 100px;
+  top: 100px;
+  border-radius: 50%;
+  background: #01B166;
+  transform: rotate(-26.56deg);
+}
+.image-background4 {
+  position: absolute;
+  width: 508.74px;
+  height: 508.74px;
+  left: 100px;
+  top: 100px;
+  border-radius: 50%;
+  background:#FFEBB0;
+  transform: rotate(-26.56deg);
 }
 
 .actual-image {
@@ -838,10 +876,43 @@ body {
   width: 577px;
   height: 596px;
   left: 55px;
-  top: 95px;
+  top: 90px;
   border-radius: 61px;
   z-index: 100;
-  transform: rotate(+5deg);
+  transform: rotate(+15deg);
+}
+
+.actual-image1 {
+  position: absolute;
+  width: 577px;
+  height: 596px;
+  left: 55px;
+  top: 90px;
+  border-radius: 61px;
+  z-index: 100;
+  /* transform: rotate(+15deg); */
+}
+
+.actual-image2 {
+  position: absolute;
+  width: 577px;
+  height: 596px;
+  left: 55px;
+  top: 70px;
+  border-radius: 61px;
+  z-index: 100;
+  /* transform: rotate(-0deg); */
+}
+
+.actual-image3 {
+  position: absolute;
+  width: 577px;
+  height: 596px;
+  left: 55px;
+  top: 90px;
+  border-radius: 61px;
+  z-index: 100;
+  /* transform: rotate(+15deg); */
 }
 
 .sign-in-btn-outside {

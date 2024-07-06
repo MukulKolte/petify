@@ -41,6 +41,8 @@ function Categories() {
             setImage(category_content[1].image);
             document.getElementById('headerId').removeAttribute('class');
             document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('image-backgroundId').removeAttribute('class');
+            document.getElementById('actual-imageId').removeAttribute('class');
             document.getElementById('category-button-1').removeAttribute('class');
             document.getElementById('category-button-1').classList.add('category-button-1-origional');
             document.getElementById('category-button-2').removeAttribute('class');
@@ -51,6 +53,8 @@ function Categories() {
             document.getElementById('category-button-4').classList.add('category-button-4-origional');
             document.getElementById('headerId').classList.add('header-pet-clinic');
             document.getElementById('descriptionId').classList.add('description-pet-clinic');
+            document.getElementById('image-backgroundId').classList.add('image-background2');
+            document.getElementById('actual-imageId').classList.add('actual-image1');
         }
         else if(choice==='Pet Daycare'){
             setHeader(category_content[2].header);
@@ -58,6 +62,8 @@ function Categories() {
             setImage(category_content[2].image);
             document.getElementById('headerId').removeAttribute('class');
             document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('image-backgroundId').removeAttribute('class');
+            document.getElementById('actual-imageId').removeAttribute('class');
             document.getElementById('category-button-1').removeAttribute('class');
             document.getElementById('category-button-1').classList.add('category-button-1-origional');
             document.getElementById('category-button-2').removeAttribute('class');
@@ -68,6 +74,8 @@ function Categories() {
             document.getElementById('category-button-4').classList.add('category-button-4-origional');
             document.getElementById('headerId').classList.add('header-pet-daycare');
             document.getElementById('descriptionId').classList.add('description-pet-daycare');
+            document.getElementById('image-backgroundId').classList.add('image-background3');
+            document.getElementById('actual-imageId').classList.add('actual-image2');
         }
         else if(choice==='Pet Training'){
             setHeader(category_content[3].header);
@@ -75,6 +83,8 @@ function Categories() {
             setImage(category_content[3].image);
             document.getElementById('headerId').removeAttribute('class');
             document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('image-backgroundId').removeAttribute('class');
+            document.getElementById('actual-imageId').removeAttribute('class');
             document.getElementById('category-button-1').removeAttribute('class');
             document.getElementById('category-button-1').classList.add('category-button-1-origional');
             document.getElementById('category-button-2').removeAttribute('class');
@@ -85,6 +95,8 @@ function Categories() {
             document.getElementById('category-button-4').classList.add('category-button-4-alter');
             document.getElementById('headerId').classList.add('header-pet-training');
             document.getElementById('descriptionId').classList.add('description-pet-training');
+            document.getElementById('image-backgroundId').classList.add('image-background4');
+            document.getElementById('actual-imageId').classList.add('actual-image3');
         }
         else if(choice==='Pet Grooming'){
             setHeader(category_content[0].header);
@@ -92,6 +104,8 @@ function Categories() {
             setImage(category_content[0].image);
             document.getElementById('headerId').removeAttribute('class');
             document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('image-backgroundId').removeAttribute('class');
+            document.getElementById('actual-imageId').removeAttribute('class');
             document.getElementById('category-button-1').removeAttribute('class');
             document.getElementById('category-button-1').classList.add('category-button-1-alter');
             document.getElementById('category-button-2').removeAttribute('class');
@@ -102,6 +116,8 @@ function Categories() {
             document.getElementById('category-button-4').classList.add('category-button-4-origional');
             document.getElementById('headerId').classList.add('header');
             document.getElementById('descriptionId').classList.add('description');
+            document.getElementById('image-backgroundId').classList.add('image-background');
+            document.getElementById('actual-imageId').classList.add('actual-image');
         }
     }
 
@@ -190,7 +206,7 @@ function Categories() {
                 </div>) */}
 
             <div className='category-buttons'>
-                <button onClick={() => handleClick('Pet Grooming')} id='category-button-1' className='category-button-1-origional'>
+                <button onClick={() => handleClick('Pet Grooming')} id='category-button-1' className='category-button-1-alter'>
                     <span className='logo-container'>
                         <svg className='small-logo' width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.0554 20.3304C16.743 22.2046 17.8285 24.8978 17.1693 28.654C16.2624 34.1211 18.7656 36.4203 21.0894 35.5258C23.4133 34.6313 23.3973 31.1032 25.614 29.6257C27.6954 28.0239 30.9876 29.1093 32.47 27.0785C34.02 25.1098 32.6442 21.9076 27.2972 21.1157C23.7358 20.6312 21.5131 18.7108 19.0554 20.3304Z" fill="#FFE55E" />

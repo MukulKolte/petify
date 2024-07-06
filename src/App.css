@@ -96,22 +96,22 @@ body {
 }
 
 .home-text {
-width: 54px;
-height: 23px;
+  width: 54px;
+  height: 23px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-background-color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  background-color: #FFFFFF;
   border: none;
 
-color: #000000;
+  color: #000000;
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .categories-text {
@@ -135,7 +135,7 @@ flex-grow: 0;
 
 .about-text {
 
-  width: 82px;
+  /* width: 82px; */
   height: 23px;
 
   font-family: 'Roboto';
@@ -174,7 +174,7 @@ flex-grow: 0;
 }
 
 .petcare-text {
-  width: 76px;
+  /* width: 76px; */
   height: 23px;
 
   font-family: 'Roboto';
@@ -211,15 +211,19 @@ flex-grow: 0;
   flex-grow: 0;
 }
 
-.home-text:hover, .categories-text:hover, .about-text:hover,
-.products-text:hover, .petcare-text:hover, .contact-text:hover{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-cursor: grabbing;
+.home-text:hover,
+.categories-text:hover,
+.about-text:hover,
+.products-text:hover,
+.petcare-text:hover,
+.contact-text:hover {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: grabbing;
 
-color: #FFAA00;
+  color: #FFAA00;
 
 }
 
@@ -449,12 +453,14 @@ color: #FFAA00;
   top: 567px;
 }
 
-#category-button-1 {
+.category-button-1-origional {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 3px;
+  background-color: transparent;
+  border-color: transparent;
 
   width: 176px;
   height: 40px;
@@ -467,9 +473,16 @@ color: #FFAA00;
 
 }
 
-#category-button-1:hover {
+.category-button-1-alter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+
   width: 176px;
   height: 40px;
+
   background: #124C5F;
   border-radius: 6px;
 
@@ -479,12 +492,33 @@ color: #FFAA00;
 
 }
 
-#category-button-2 {
+.category-button-1-origional:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 3px;
+
+  width: 176px;
+  height: 40px;
+
+  background: #124C5F;
+  border-radius: 6px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.category-button-2-origional {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+  background-color: transparent;
+  border-color: transparent;
 
   width: 143px;
   height: 40.3px;
@@ -494,7 +528,25 @@ color: #FFAA00;
   flex-grow: 0;
 }
 
-#category-button-2:hover {
+.category-button-2-alter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+
+  width: 143px;
+  height: 40.3px;
+
+  background: #124C5F;
+  border-radius: 6px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.category-button-2-origional:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -513,12 +565,14 @@ color: #FFAA00;
 
 }
 
-#category-button-3 {
+.category-button-3-origional {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 3px;
+  background-color: transparent;
+  border-color: transparent;
 
   width: 160px;
   height: 40.3px;
@@ -529,7 +583,26 @@ color: #FFAA00;
 
 }
 
-#category-button-3:hover {
+.category-button-3-alter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+
+  width: 160px;
+  height: 40.3px;
+
+  background: #124C5F;
+  border-radius: 6px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+
+.category-button-3-origional:hover {
 
   display: flex;
   flex-direction: row;
@@ -550,19 +623,39 @@ color: #FFAA00;
 
 }
 
-#category-button-4 {
+.category-button-4-origional {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 3px;
+  background-color: transparent;
+  border-color: transparent;
 
   flex: none;
   order: 2;
   flex-grow: 0;
 }
 
-#category-button-4:hover {
+.category-button-4-alter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+
+  width: 159px;
+  height: 40.3px;
+
+  background: #124C5F;
+  border-radius: 6px;
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.category-button-4-origional:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -860,4 +953,117 @@ color: #FFAA00;
   line-height: 19px;
 
   color: #124C5F;
+}
+
+.header-pet-clinic {
+  width: 114px;
+  height: 28px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description-pet-clinic {
+
+  width: 667px;
+  height: 140px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.header-pet-daycare {
+
+  width: 142px;
+  height: 28px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description-pet-daycare {
+  width: 667px;
+  height: 112px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.header-pet-training {
+  width: 144px;
+  height: 28px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description-pet-training {
+  width: 667px;
+  height: 112px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }

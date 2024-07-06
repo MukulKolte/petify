@@ -39,21 +39,69 @@ function Categories() {
             setHeader(category_content[1].header);
             setDescription(category_content[1].description);
             setImage(category_content[1].image);
+            document.getElementById('headerId').removeAttribute('class');
+            document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('category-button-1').removeAttribute('class');
+            document.getElementById('category-button-1').classList.add('category-button-1-origional');
+            document.getElementById('category-button-2').removeAttribute('class');
+            document.getElementById('category-button-2').classList.add('category-button-2-alter');
+            document.getElementById('category-button-3').removeAttribute('class');
+            document.getElementById('category-button-3').classList.add('category-button-3-origional');
+            document.getElementById('category-button-4').removeAttribute('class');
+            document.getElementById('category-button-4').classList.add('category-button-4-origional');
+            document.getElementById('headerId').classList.add('header-pet-clinic');
+            document.getElementById('descriptionId').classList.add('description-pet-clinic');
         }
         else if(choice==='Pet Daycare'){
             setHeader(category_content[2].header);
             setDescription(category_content[2].description);
             setImage(category_content[2].image);
+            document.getElementById('headerId').removeAttribute('class');
+            document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('category-button-1').removeAttribute('class');
+            document.getElementById('category-button-1').classList.add('category-button-1-origional');
+            document.getElementById('category-button-2').removeAttribute('class');
+            document.getElementById('category-button-2').classList.add('category-button-2-origional');
+            document.getElementById('category-button-3').removeAttribute('class');
+            document.getElementById('category-button-3').classList.add('category-button-3-alter');
+            document.getElementById('category-button-4').removeAttribute('class');
+            document.getElementById('category-button-4').classList.add('category-button-4-origional');
+            document.getElementById('headerId').classList.add('header-pet-daycare');
+            document.getElementById('descriptionId').classList.add('description-pet-daycare');
         }
         else if(choice==='Pet Training'){
             setHeader(category_content[3].header);
             setDescription(category_content[3].description);
             setImage(category_content[3].image);
+            document.getElementById('headerId').removeAttribute('class');
+            document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('category-button-1').removeAttribute('class');
+            document.getElementById('category-button-1').classList.add('category-button-1-origional');
+            document.getElementById('category-button-2').removeAttribute('class');
+            document.getElementById('category-button-2').classList.add('category-button-2-origional');
+            document.getElementById('category-button-3').removeAttribute('class');
+            document.getElementById('category-button-3').classList.add('category-button-3-origional');
+            document.getElementById('category-button-4').removeAttribute('class');
+            document.getElementById('category-button-4').classList.add('category-button-4-alter');
+            document.getElementById('headerId').classList.add('header-pet-training');
+            document.getElementById('descriptionId').classList.add('description-pet-training');
         }
-        else{
+        else if(choice==='Pet Grooming'){
             setHeader(category_content[0].header);
             setDescription(category_content[0].description);
             setImage(category_content[0].image);
+            document.getElementById('headerId').removeAttribute('class');
+            document.getElementById('descriptionId').removeAttribute('class');
+            document.getElementById('category-button-1').removeAttribute('class');
+            document.getElementById('category-button-1').classList.add('category-button-1-alter');
+            document.getElementById('category-button-2').removeAttribute('class');
+            document.getElementById('category-button-2').classList.add('category-button-2-origional');
+            document.getElementById('category-button-3').removeAttribute('class');
+            document.getElementById('category-button-3').classList.add('category-button-3-origional');
+            document.getElementById('category-button-4').removeAttribute('class');
+            document.getElementById('category-button-4').classList.add('category-button-4-origional');
+            document.getElementById('headerId').classList.add('header');
+            document.getElementById('descriptionId').classList.add('description');
         }
     }
 
@@ -107,20 +155,20 @@ function Categories() {
 
 
             <div className='info-container'>
-                <div className='header'>
+                <div id='headerId' className='header'>
                     {header}
                 </div>
-                <div className='description'>
+                <div id='descriptionId' className='description'>
                     {description}
                 </div>
-                <div className='getstarted-btn'>
-                    <button className='getstarted-btn-inside'><span className='getstarted-btn-text'></span>Get Started</button>
+                <div id='getstarted-btnId' className='getstarted-btn'>
+                    <button id='getstarted-btn-insideId' className='getstarted-btn-inside'><span id='getstarted-btn-textId' className='getstarted-btn-text'></span>Get Started</button>
                 </div>
             </div>
-            <div className='image'>
+            <div id='imageId' className='image'>
 
-                <img className='actual-image' src={image} />
-                <div className='image-background'>  </div>
+                <img id='actual-imageId' className='actual-image' src={image} />
+                <div id='image-backgroundId' className='image-background'>  </div>
             </div>
 
             {/* ({activeChoice==='Pet Grooming'} && 
@@ -142,7 +190,7 @@ function Categories() {
                 </div>) */}
 
             <div className='category-buttons'>
-                <button onClick={() => handleClick('Pet Grooming')} id='category-button-1'>
+                <button onClick={() => handleClick('Pet Grooming')} id='category-button-1' className='category-button-1-origional'>
                     <span className='logo-container'>
                         <svg className='small-logo' width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.0554 20.3304C16.743 22.2046 17.8285 24.8978 17.1693 28.654C16.2624 34.1211 18.7656 36.4203 21.0894 35.5258C23.4133 34.6313 23.3973 31.1032 25.614 29.6257C27.6954 28.0239 30.9876 29.1093 32.47 27.0785C34.02 25.1098 32.6442 21.9076 27.2972 21.1157C23.7358 20.6312 21.5131 18.7108 19.0554 20.3304Z" fill="#FFE55E" />
@@ -155,7 +203,7 @@ function Categories() {
                     <span className='category-button-text'>Pet Grooming</span>
                 </button>
 
-                <button onClick={() => handleClick('Pet Clinic')} id='category-button-2'>
+                <button onClick={() => handleClick('Pet Clinic')} id='category-button-2' className='category-button-2-origional'>
                     <span className='logo-container'>
                         <svg className='small-logo' width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.0554 20.3304C16.743 22.2046 17.8285 24.8978 17.1693 28.654C16.2624 34.1211 18.7656 36.4203 21.0894 35.5258C23.4133 34.6313 23.3973 31.1032 25.614 29.6257C27.6954 28.0239 30.9876 29.1093 32.47 27.0785C34.02 25.1098 32.6442 21.9076 27.2972 21.1157C23.7358 20.6312 21.5131 18.7108 19.0554 20.3304Z" fill="#FFE55E" />
@@ -168,7 +216,7 @@ function Categories() {
                     <span className='category-button-text-2'>Pet Clinic</span>
                 </button>
 
-                <button onClick={() => handleClick('Pet Daycare')} id='category-button-3'>
+                <button onClick={() => handleClick('Pet Daycare')} id='category-button-3' className='category-button-3-origional'>
                     <span className='logo-container'>
                         <svg className='small-logo' width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.0554 20.3304C16.743 22.2046 17.8285 24.8978 17.1693 28.654C16.2624 34.1211 18.7656 36.4203 21.0894 35.5258C23.4133 34.6313 23.3973 31.1032 25.614 29.6257C27.6954 28.0239 30.9876 29.1093 32.47 27.0785C34.02 25.1098 32.6442 21.9076 27.2972 21.1157C23.7358 20.6312 21.5131 18.7108 19.0554 20.3304Z" fill="#FFE55E" />
@@ -181,7 +229,7 @@ function Categories() {
                     <span className='category-button-text-3'>Pet Daycare</span>
                 </button>
 
-                <button onClick={() => handleClick('Pet Training')} id='category-button-4'>
+                <button onClick={() => handleClick('Pet Training')} id='category-button-4' className='category-button-4-origional'>
                     <span className='logo-container'>
                         <svg className='small-logo' width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.0554 20.3304C16.743 22.2046 17.8285 24.8978 17.1693 28.654C16.2624 34.1211 18.7656 36.4203 21.0894 35.5258C23.4133 34.6313 23.3973 31.1032 25.614 29.6257C27.6954 28.0239 30.9876 29.1093 32.47 27.0785C34.02 25.1098 32.6442 21.9076 27.2972 21.1157C23.7358 20.6312 21.5131 18.7108 19.0554 20.3304Z" fill="#FFE55E" />
